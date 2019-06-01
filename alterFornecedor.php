@@ -65,8 +65,11 @@
                 margin-left: 8%;
                 width: 55vh;
             }
-
+            
         }
+        form input{
+                text-align: center;
+            }
     </style>
     <?php if (@$_SESSION['ADDS']){ ?>
         <div class="alert alert-success fixed-top text-center alert-dismissible fade show" role="alert">
@@ -88,7 +91,7 @@
         <form class="form form-group" action="_sqlC/alterForn.php?id=<?php echo $id?>" method="post"> 
             <div class="container-fluid text-center mt-4">
                 <div class="row">
-                    <div class="col-md-12"><h1><i class="fas fa-pencil-alt"></i>> Alterar Fornecedor </div>
+                    <div class="col-md-12"><h1><i class="fas fa-pencil-alt"></i> Alterar Fornecedor </div>
                 </div>
                 <div class="row mt-3">
                     <?php if ($id > 0 && $id < 10) { ?>
@@ -135,13 +138,13 @@
             
                     <div class="row mt-5">
                         <div class="col-md-4 text-center">
-                        <a href="listForn.php" class="btn btn-lg" id="mandar"> Retornar <i class="fas fa-undo"></i> </a>
+                        <a href="listForn.php" class="btn btn-lg mx-auto" id="mandar"> Retornar <i class="fas fa-undo"></i> </a>
                         </div>
                         <div class="col-md-4 text-center">
-                            <button type="reset" class="btn btn-lg" id="apagar">Restaurar Valores <i class="fas fa-backspace"></i> </button>
+                            <button type="reset" class="btn btn-lg mx-auto" id="apagar">Restaurar Valores <i class="fas fa-backspace"></i> </button>
                         </div>
                         <div class="col-md-4 text-center">
-                        <button type="submit" id="enviar" class="btn  btn-lg" >Alterar <i class="far fa-paper-plane"></i> </button>
+                        <button type="submit" id="enviar" class="btn mx-auto  btn-lg" >Alterar <i class="far fa-paper-plane"></i> </button>
 
                         </div>
                         

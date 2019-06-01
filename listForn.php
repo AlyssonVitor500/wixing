@@ -65,8 +65,8 @@
         
         <div class="row">
             <div class="col-md-12">
-                <table style="cursor: default" class="table  table-hover bg-light">
-                    <thead class="text-center">
+                <table style="cursor: default" class="table  table-hover table-light">
+                    <thead class="text-center"  style="background-color: #062e5e; color: white">
                         <th>ID</th>
                         <th>Nome do Fornecedor</th>
                         <th>CNPJ do Fornecedor</th>

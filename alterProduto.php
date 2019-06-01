@@ -30,18 +30,18 @@
         }
         #apagar{
             background-color:deepskyblue; 
-            width: 90%;
+            width: 100%;
             color: white;
         }
         #enviar {
             background-color:midnightblue;
             color: white;
-            width: 90%;
+            width: 100%;
         }
         #mandar {
             
             color: white;
-            width: 90%;
+            width: 100%;
             background-color: #427fbc;
         }
         
@@ -71,8 +71,14 @@
                 margin-left: 8%;
                 width: 55vh;
             }
+            form{
+                text-align: center;
+            }
 
         }
+        form input{
+                text-align: center;
+            }
     </style>
    
     <div id="conteudo"  style="height: 100vh;" class="container">
@@ -117,7 +123,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="nome"><strong>Marca do Produto</strong></label>
-                        <select class="form-control" name="fabricante" id="">
+                        <select class="form-control mx-auto" style="width:80%" name="fabricante" id="">
                             <option value="0" selected disabled>Escolha um Fornecedor</option>
                             <?php 
                                 $sql = mysqli_query($conn,"SELECT * FROM fornecedor ORDER BY nomeForn");
@@ -154,7 +160,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="tipo"><strong>Tipo do Produto</strong></label>
-                        <select style="font-weight: bold" class="form-control" name="tipo" required id="tipo">
+                        <select style="font-weight: bold" style="width:80%" class="form-control mx-auto" name="tipo" required id="tipo">
                             <option value="0" selected disabled>Escolha o tipo do Produto</option>
                             <option value="1" >Perecível</option>
                             <option value="2">Não Perecível</option>
@@ -184,13 +190,13 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-md-4 text-center">
-                            <a href="listProd.php" class="btn btn-lg" id="mandar"> Retornar <i class="fas fa-undo"></i> </a>
+                            <a href="listProd.php" class="btn btn-lg mx-auto" id="mandar"> Retornar <i class="fas fa-undo"></i> </a>
                         </div>
                         <div class="col-md-4 text-center">
-                            <button type="reset" class="btn btn-lg" id="apagar">Retornar Valores Originais <i class="fas fa-backspace"></i> </button>
+                            <button type="reset" class="btn btn-lg mx-auto" id="apagar">Retornar Valores Originais <i class="fas fa-backspace"></i> </button>
                         </div>
                         <div class="col-md-4 text-center">
-                         <button type="submit" id="enviar" class="btn  btn-lg" >Alterar <i class="far fa-paper-plane"></i> </button>
+                         <button type="submit" id="enviar" class="btn  btn-lg mx-auto" >Alterar <i class="far fa-paper-plane"></i> </button>
 
                         </div>
                         

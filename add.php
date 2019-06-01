@@ -28,18 +28,23 @@
         }
         #apagar{
             background-color:deepskyblue; 
-            width: 90%;
+            width: 100%;
             color: white;
         }
         #enviar {
             background-color:midnightblue;
             color: white;
-            width: 90%;
+            width: 100%;
         }
         #mandar {
             
             color: white;
-            width: 90%;
+            width: 100%;
+            background-color: #177dc1;
+        }
+        #voltar {
+            color: white;
+            width:100%;
             background-color: #427fbc;
         }
         
@@ -65,11 +70,16 @@
             #enviar{
                 margin-top: 1%
             }
-            #apagar, #enviar, #mandar {
+            #mandar {
+                margin-top: 1%
+            }
+            #apagar, #enviar, #mandar,#voltar {
                 margin-left: 8%;
                 width: 55vh;
             }
-
+            form input{
+                text-align: center;
+            }
         }
     </style>
     <?php if (@$_SESSION['ADDS']){ ?>
@@ -130,7 +140,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="nome"><strong>Fornecedor do Produto</strong></label>
-                        <select class="form-control" name="fabricante" id="">
+                        <select class="form-control mx-auto" name="fabricante" style="width:80%;" id="">
                             <option value="0" selected disabled>Escolha um Fornecedor</option>
                             <?php 
                                 $sql = mysqli_query($conn,"SELECT * FROM fornecedor ORDER BY nomeForn");
@@ -168,7 +178,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="tipo"><strong>Tipo do Produto</strong></label>
-                        <select style="font-weight: bold" class="form-control" required name="tipo" id="tipo">
+                        <select style="font-weight: bold; width:80%" class="form-control  mx-auto" required name="tipo" id="tipo">
                             <option value="0" selected disabled>Escolha o tipo do Produto</option>
                             <option value="1" >Perecível</option>
                             <option value="2">Não Perecível</option>
@@ -190,21 +200,27 @@
                             
                                 
                             <label for="desc"><strong>Descrição do Produto</strong></label>
-                            <textarea   style="font-weight: bold; resize: none;" class="form-control" required name="desc"  id="value"> </textarea>
+                            <textarea   style="font-weight: bold; resize: none; " class="form-control mx-auto" required name="desc"  id="value"> </textarea>
                             
                     
                         </div>
                         
                     </div>
-                    <div class="row mt-2">
-                        <div class="col-md-4 text-center">
-                            <a href="listProd.php" class="btn btn-lg" id="mandar"> Listar Produtos Cadastrados <i class="fas fa-list"></i> </a>
+                    <div class="row mt-3">
+
+                        <div class="col-md-2 text-center">
+                            <a href="menuAdd.php" class="btn btn-lg mx-auto" id="voltar"><i class="far fa-hand-point-left"></i> Voltar  </a>
                         </div>
                         <div class="col-md-4 text-center">
-                            <button type="reset" class="btn btn-lg" id="apagar">Apagar Valores <i class="fas fa-backspace"></i> </button>
+                            <a href="listProd.php" class="btn btn-lg mx-auto" id="mandar"> Listar Produtos Cadastrados <i class="fas fa-list"></i> </a>
                         </div>
+                        
+
                         <div class="col-md-4 text-center">
-                        <button type="submit" id="enviar" class="btn  btn-lg" >Enviar <i class="far fa-paper-plane"></i> </button>
+                            <button type="reset" class="btn btn-lg mx-auto" id="apagar">Apagar Valores <i class="fas fa-backspace"></i> </button>
+                        </div>
+                        <div class="col-md-2 text-center">
+                        <button type="submit" id="enviar" class="btn mx-auto btn-lg" >Enviar <i class="far fa-paper-plane"></i> </button>
 
                         </div>
                         

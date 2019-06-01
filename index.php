@@ -51,6 +51,9 @@
 	input#enter {
 		width: 6vw;
 	}
+	h5, input[type="submit"],div.alert{
+		font-family: "FontePrincipal";
+	}
 	@media only screen and (max-width: 600px) {
 		div.card {
 			width:70vw;
@@ -71,6 +74,11 @@
 		}
 
 	}
+
+	@font-face {
+        font-family: "FontePrincipal";
+        src: url("_font/caviar_dreams/CaviarDreams.ttf");
+    } 
 </style>
 <body>
 	<div id="Container" class="container">
@@ -80,7 +88,7 @@
 
 			<div class="card mx-auto" >
 				<div class="card-header text-center">
-					<img src="_imgs/logoP.png" width="45" alt="Logo">Wixing
+					<img src="_imgs/logoP.png" width="45" alt="Logo"><span>Wixing</span>
 				</div>
 				<div class="card-body pb-3">
 					<div class="form-row mt-2">
@@ -130,8 +138,9 @@
 							}
 
 					?>
-
+					
 				</div>
+				
 				<div class="card-footer text-center">
 					<input type="submit"  id="enter" class="btn btn-primary" value="Entrar">
 					

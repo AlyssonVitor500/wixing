@@ -22,6 +22,7 @@
             background-color: #427fbc;
             color: white;
         }
+  
     </style>
     <!-- ALERTs -->
 
@@ -67,13 +68,13 @@
     <div id="conteudo"  style="height: 100vh; padding-bottom: 5vh;" class="container">
         <div class="row">
             <div class="col-md-12 text-center mt-2">
-                <h1><strong><i class="fas fa-box-open"></i> Estoque</strong> <button data-toggle="modal" data-target="#FornSearchAll" data- class="btn ml-5" style="background-color:#480720; color: white"><strong>Pesquisar por Fornecedor</strong></button> <a href="estoque.php" style="background-color:#041042; color: white" class="btn"><strong>Todos os Fornecedores</strong></a></h1>
+                <h1><strong><i class="fas fa-box-open"></i> Listagem de Produtos </strong><button data-toggle="modal" data-target="#FornSearchAll" data- class="btn ml-5" style="background-color: #480720; color: white"><strong>Pesquisar por Fornecedor</strong></button> <a href="listProd.php" style="background-color:#041042; color: white" class="btn"><strong>Todos os Produtos</strong></a> </h1>
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-12">
-                <table style="cursor: default" class="table table-hover">
+                <table style="cursor: default" class="table  table-hover table-light">
                     <thead class="text-center" style="background-color: #062e5e; color: white">
                         <th>ID</th>
                         <th>Nome do Produto</th>
@@ -82,16 +83,12 @@
                         <th>Tipo do Produto</th>
                         <th>Valor do Produto</th>
                         <th>Descrição</th>
-                        <th>Quantidade no estoque</th>
-                        
+                        <th></th>
+                        <th></th>
                     </thead>
                     <tbody style="font-weight: bold" class="text-center">
                         <?php
-
-                           
-                                include_once '_sqlC/estoqueEspec.php';
-                          
-                            
+                            include_once '_sqlC/listProdEspec.php';
                         ?>
                     </tbody>
                 </table>
@@ -112,7 +109,7 @@
                     <div class="col-md-12">
                         <form action="" method="get">
                             <label for="fabr">Escolha o Fornecedor</label>
-                            <select class="form-control" name="fabricante" id="fabr">
+                            <select style="font-weight: bold;" class="form-control" name="fabricante" id="fabr">
                                 <option value="0" selected disabled>Escolher</option>
                                 <?php 
                                     $sql = mysqli_query($conn,"SELECT * FROM fornecedor ORDER BY nomeForn");
@@ -147,7 +144,7 @@
             </div>
         </div>
         </form>
-    </div>
+
 <?php 
     include_once '_includes/arqBaixo.php';
 ?>

@@ -1,7 +1,7 @@
 <?php   
     include_once 'conexao.php';
     
-    $idFabri = isset($_POST['fabricante'])?$_POST['fabricante']:"";
+    $idFabri = isset($_GET['fabricante'])?$_GET['fabricante']:"";
     
     if ($idFabri != 0) {
             $cmd =  "SELECT * FROM produtos as p,fornecedor as f WHERE  p.idFornFK = f.idForn and p.idFornFK = '$idFabri' ORDER BY nome";

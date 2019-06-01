@@ -69,6 +69,7 @@
                 margin-left: 8%;
                 width: 55vh;
             }
+           
 
         }
     </style>
@@ -156,8 +157,28 @@
                         
                     </div>
                     
+                  
                 </div>
-                </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6 text-center">
+                                
+                               <label><strong> Registrar pelo dia e hora atual ou escolher? </strong></label>
+                               <select class="form-control mx-auto" name="selectDia"  style="width: 90%;" id="">
+                                    <option value="1" id="diaA" selected>Dia e hora atual</option>
+                                    <option value="2" id="diaE" >Escolher dia e hora</option>
+                                </select>    
+                        </div>
+                        <div class="col-md-3 text-center">
+                                
+                               <label><strong> Dia da Chegada </strong></label>
+                               <input class="form-control"  type="date" name="dia" id="dia">   
+                        </div>
+                        <div class="col-md-3 text-center">
+                                
+                               <label><strong> Hora da Chegada </strong></label>
+                               <input class="form-control"  type="time" placeholder="hh:mm:ss" id="hora" name="hora" >   
+                        </div>
+                    </div>
             
                     <div class="row mt-5">
                         
@@ -182,3 +203,20 @@
     include_once '_includes/arqBaixo.php';
 ?>
 
+<script src="_arqvsImport/jquery.mask.js"></script>
+<script>
+   var diaA = document.getElementById("diaA");
+   var diaE = document.getElementById("diaE");
+
+   setInterval(verifica,500);
+
+   function verifica() {
+       if(diaA.selected == true){
+            document.getElementById("hora").disabled = true;
+            document.getElementById("dia").disabled = true;
+       }else {
+            document.getElementById("hora").disabled = false;
+            document.getElementById("dia").disabled = false;
+       }
+   }
+</script>

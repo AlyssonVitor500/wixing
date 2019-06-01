@@ -28,18 +28,23 @@
         }
         #apagar{
             background-color:deepskyblue; 
-            width: 90%;
+            width: 100%;
             color: white;
         }
         #enviar {
             background-color:midnightblue;
             color: white;
-            width: 90%;
+            width: 100%;
         }
-        #mandar {
+         #mandar {
             
             color: white;
             width: 100%;
+            background-color: #177dc1;
+        }
+        #voltar {
+            color: white;
+            width:100%;
             background-color: #427fbc;
         }
         
@@ -65,9 +70,16 @@
             #enviar{
                 margin-top: 1%
             }
-            #apagar, #enviar, #mandar {
+
+            #mandar {
+                margin-top: 1%
+            }
+            #apagar, #enviar, #mandar,#voltar {
                 margin-left: 8%;
                 width: 55vh;
+            }
+            form input{
+                text-align: center;
             }
 
         }
@@ -138,18 +150,23 @@
                 </div>
             
                     <div class="row mt-5">
-                        <div class="col-md-4 text-center">
-                            <a href="listForn.php" class="btn btn-lg" id="mandar"> Listar Fornecedores Cadastrados <i class="fas fa-list"></i> </a>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <button type="reset" class="btn btn-lg" id="apagar">Apagar Valores <i class="fas fa-backspace"></i> </button>
-                        </div>
-                        <div class="col-md-4 text-center">
-                        <button type="submit" id="enviar" class="btn  btn-lg" >Enviar <i class="far fa-paper-plane"></i> </button>
+                        <div class="col-md-2 text-center">
+                                <a href="menuAdd.php" class="btn btn-lg mx-auto" id="voltar"><i class="far fa-hand-point-left"></i> Voltar  </a>
+                            </div>
+                            <div class="col-md-5 text-center">
+                                <a href="listForn.php" class="btn btn-lg mx-auto" id="mandar"> Listar Fornecedores Cadastrados <i class="fas fa-list"></i> </a>
+                            </div>
+                            
 
+                            <div class="col-md-3 text-center">
+                                <button type="reset" class="btn btn-lg mx-auto" id="apagar">Apagar Valores <i class="fas fa-backspace"></i> </button>
+                            </div>
+                            <div class="col-md-2 text-center">
+                            <button type="submit" id="enviar" class="btn mx-auto btn-lg" >Enviar <i class="far fa-paper-plane"></i> </button>
+
+                            </div>
+                            
                         </div>
-                        
-                    </div>
 
                 </div>
                 

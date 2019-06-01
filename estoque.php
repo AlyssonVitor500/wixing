@@ -67,14 +67,14 @@
     <div id="conteudo"  style="height: 100vh; padding-bottom: 5vh;" class="container">
         <div class="row">
             <div class="col-md-12 text-center mt-2">
-                <h1><strong><i class="fas fa-box-open"></i> Listagem de Produtos</strong> <button data-toggle="modal" data-target="#FornSearchAll" data- class="btn ml-5" style="background-color: #062e5e; color: white"><strong>Pesquisar por Fornecedor</strong></button></h1>
+                <h1><strong><i class="fas fa-box-open"></i> Estoque</strong> <button data-toggle="modal" data-target="#FornSearchAll" data- class="btn ml-5" style="background-color: #480720; color: white"><strong>Pesquisar por Fornecedor</strong></button></h1>
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-12">
-                <table style="cursor: default" class="table  table-hover bg-light">
-                    <thead class="text-center">
+                <table style="cursor: default" class="table  table-hover ">
+                    <thead class="text-center" style="background-color:#062e5e; color: white">
                         <th>ID</th>
                         <th>Nome do Produto</th>
                         <th>Fabricante do Produto</th>
@@ -110,9 +110,9 @@
             <div class="modal-body text-center">
                 <div class="row">
                     <div class="col-md-12">
-                        <form action="estoqueEspec.php" method="post">
+                        <form action="estoqueEspec.php" method="get">
                             <label for="fabr">Escolha o Fornecedor</label>
-                            <select class="form-control" name="fabricante" id="fabr">
+                            <select style="font-weight: bold;" class="form-control" name="fabricante" id="fabr">
                                 <option value="0" selected disabled>Escolher</option>
                                 <?php 
                                     $sql = mysqli_query($conn,"SELECT * FROM fornecedor ORDER BY nomeForn");

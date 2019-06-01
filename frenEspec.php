@@ -4,24 +4,21 @@
     
     <style>
         tr.tabela-chegou {
-            background-color: rgba(11,156,49,.5);
-            transition: .2s;
+            background-color: rgba(11,156,49,.4);
             color: white;
-            font-weight: bold;
-            
+            transition: .2s;
         }
         tr.tabela-saiu {
-            background-color: rgba(255,0,0,.5);
+            background-color: rgba(255,0,0,.4);
             transition: .2s;
             color: white;
-            font-weight: bold;
         }
         tr.tabela-chegou:hover {
-            background-color: rgba(11,156,49,.6);
+            background-color: rgba(11,156,49,.5);
            
         }
         tr.tabela-saiu:hover {
-            background-color: rgba(255,0,0,.6);
+            background-color: rgba(255,0,0,.5);
             
            
         }
@@ -40,7 +37,7 @@
     <div id="conteudo"  style="height: 100vh; padding-bottom: 5vh;" class="container">
         <div class="row">
             <div class="col-md-12 text-center mt-2">
-                <h1><strong><i class="fas fa-table"></i> Frequências</strong><button data-toggle="modal" data-target="#FreqSearchAll" data- class="btn ml-5" style="background-color: #480720; color: white"><strong>Pesquisa Inteligente</strong></button></h1>
+                <h1><strong><i class="fas fa-table"></i> Frequências</strong><button data-toggle="modal" data-target="#FreqSearchAll" data- class="btn ml-5" style="background-color: #480720; color: white"><strong>Pesquisa Inteligente</strong></button> <a href="freq.php" style="background-color:#041042; color: white" class="btn"><strong>Todos os Registros</strong></a></h1>
             </div>
         </div>
         
@@ -60,19 +57,19 @@
                     </thead>
                     <tbody style="font-weight: bold" class="text-center">
                         <?php
-                            include_once '_sqlC/listFreq.php';
+                            include_once '_sqlC/FrenEspec.php';
                         ?>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-    <form class="form-group" action="frenEspec.php" method="post">
+    <form class="form-group" action="_sqlC/frenEspec.php" method="post">
         <div class="modal fade" id="FreqSearchAll" tabindex="-1" role="dialog" aria-labelledby="FreqSearch" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="FreqSearch"><strong><i class="fas fa-search"></i> Pesquisar frequência por período</strong></h5>
+                    <h5 class="modal-title" id="FreqSearch"><strong><i class="fas fa-search"></i> Pesquisar frequência por período</strong> </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                     </button>

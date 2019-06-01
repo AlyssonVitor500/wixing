@@ -6,14 +6,12 @@
             visibility: hidden;
            
         }
-        span.fechar {
-            margin-left: 30%;
-        }
+        
         button#btn-expandir {
             display: none;
         }
 
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 800px) {
             button#btn-expandir {
                 display: block;
                 position: absolute;
@@ -25,7 +23,7 @@
                 height: 9vh;
                 
             }
-            div.vertical {
+            div.nav-Side {
                 display: none;
             }
             div#navSide {
@@ -47,52 +45,40 @@
 
             }
             
-            div.menu {
-                position: absolute;
-                width: 100%;
-                z-index: 3;
-            }
-            
-           div.card-menu {
+          
+           div.card-menu-aparecer {
                background-color: rgba(255,255,255,0);
                border: none;
                height: 100vh
            }
-           div.card-menu div.card-header {
+           div.card-menu-aparecer div.card-header {
                 color: white
            }
-           div.card-menu div i {
+           div.card-menu-aparecer div i {
                 color: white;
                 
                 transition: .2s;
              }
-            div.card-menu div i:hover {
+            div.card-menu-aparecer div i:hover {
                 color: rgba(255, 255, 255, 0.76);
                 -webkit-transform: scale(1.1);
             }
-            div.card-menu div.card-body td {
+            div.card-menu-aparecer div.card-body td {
                 padding: 14%;
             }
             i.icon {
                 margin-left: 2%;
             }
-            span.label {
-                color: white;
-                text-decoration: none;
-                font-weight: bold;
-            }
-            span.label:hover {
-               text-decoration: none;
-            }
-           
+          
         }
+       
     </style>
     <button onclick="entra()" id="btn-expandir" class="btn expandir">
         <i class="fas fa-bars fa-2x"></i>
     </button>
     <div id="navSide">
             
-            <div class="card card-menu">
+            <div class="card card-menu-aparecer">
                 <div class="card-header">
                     <?php echo mb_convert_case($_SESSION['user'],MB_CASE_TITLE, 'UTF-8');?> <i class="fas fa-times-circle icon"  onclick="sai()"></i>
                 </div>
@@ -108,6 +94,9 @@
                                
                                 <tr>
                                     <td> <div class="container" style=""><a href="menuAdd.php"><i  title="Adicionar Produto/Fornecedor" class="fas fa-folder-plus fa-2x"></i></a></div> </td>
+                                </tr>
+                                <tr>
+                                    <td> <div class="container" style=""><a href="menuVer.php"><i title="Ver Produtos e Fornecedores" class="fas fa-th fa-2x"></i></a></div> </td>
                                 </tr>
                                 <tr>
                                     <td> <div class="container" style=""><a href="vender.php"><i title="Registrar Saida"  class="fas fa-money-bill-alt fa-2x"></i></a></div> </td>

@@ -7,8 +7,9 @@
         $idLog = $dados['idLog'];
         $tipoLog = $dados['tipo'];
         $quant = $dados['quant_prod'];
-        $prod_nome = $dados['nome'];
-        $nomeForn = $dados['nomeForn'];
+        
+        $prod_nome = mb_convert_case($dados['nome'], MB_CASE_TITLE, 'UTF-8');
+        $nomeForn = mb_convert_case($dados['nomeForn'], MB_CASE_TITLE, 'UTF-8');
         $data = $dados['dia'];
 
         if ($tipoLog == 1) {

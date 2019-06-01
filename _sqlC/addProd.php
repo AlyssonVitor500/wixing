@@ -22,12 +22,13 @@
             $_SESSION['ADDS'] = true;
             header("Location: ../add.php");
         }else {
-          
-            $_SESSION['ADDD'] = true;
-            header("Location: ../add.php");
+            
+           $_SESSION['ADDD'] = true;
+           header("Location: ../add.php");
         }
     
     }else {
+        
         $_SESSION['ADDD'] = true;
         header("Location: ../add.php");
     }

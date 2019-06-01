@@ -128,7 +128,7 @@
 		animation: fadeIn .9s ease-in-out;
     }
 </style>
-<body >
+<body onload="comecarSlider()" >
     <div id="tag"  class="vertical navbar-default navbar-static-aside">
 
 

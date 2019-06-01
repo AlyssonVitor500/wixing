@@ -67,7 +67,7 @@
     <div id="conteudo"  style="height: 100vh; padding-bottom: 5vh;" class="container">
         <div class="row">
             <div class="col-md-12 text-center mt-2">
-                <h1><strong><i class="fas fa-box-open"></i> Listagem de Produtos</strong> <button data-toggle="modal" data-target="#FornSearchAll" data- class="btn ml-5" style="background-color: #062e5e; color: white"><strong>Pesquisar por Fornecedor</strong></button></h1>
+                <h1><strong><i class="fas fa-box-open"></i> Listagem de Produtos</strong> <button data-toggle="modal" data-target="#FornSearchAll" data- class="btn ml-5" style="background-color: #062e5e; color: white"><strong>Pesquisar por Fornecedor</strong></button> <a href="estoque.php" style="background-color:#041042; color: white" class="btn">Todos os Fornecedores</a></h1>
             </div>
         </div>
         
@@ -89,7 +89,7 @@
                         <?php
 
                            
-                                include_once '_sqlC/listarEstoque.php';
+                                include_once '_sqlC/estoqueEspec.php';
                           
                             
                         ?>
@@ -110,7 +110,7 @@
             <div class="modal-body text-center">
                 <div class="row">
                     <div class="col-md-12">
-                        <form action="estoqueEspec.php" method="post">
+                        <form action="" method="post">
                             <label for="fabr">Escolha o Fornecedor</label>
                             <select class="form-control" name="fabricante" id="fabr">
                                 <option value="0" selected disabled>Escolher</option>

@@ -72,22 +72,30 @@
 
         }
     </style>
-    <?php if (@$_SESSION['ADDS']){ ?>
+    <?php if (@$_SESSION['CERTO']){ ?>
         <div class="alert alert-success fixed-top text-center alert-dismissible fade show" role="alert">
-            <strong>Fornecedor cadastrado com Sucesso!</strong>
+            <strong>Saida registrada com Sucesso!</strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-    <?php unset($_SESSION['ADDS']); } ?>
-    <?php if (@$_SESSION['ADDD']){ ?>
+    <?php unset($_SESSION['CERTO']); } ?>
+    <?php if (@$_SESSION['FALTA']){ ?>
         <div class="alert alert-danger fixed-top text-center alert-dismissible fade show" role="alert">
-            <strong>Fornecedor não cadastrado! Verifique se o nome ou cnpj do fornecedor já estão cadastradods e tente novamente</strong>
+            <strong>Adicione um produto e tente novamente!</strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-    <?php unset($_SESSION['ADDD']); } ?>
+    <?php unset($_SESSION['FALTA']); } ?>
+    <?php if (@$_SESSION['NUMENOR']){ ?>
+        <div class="alert alert-danger fixed-top text-center alert-dismissible fade show" role="alert">
+            <strong>O número que você informou de saida é maior que o número no seu estoque! Verifique ou Peça mais produtos e tente novamente!<br>O estoque atual desse produto é: <?php echo $_SESSION['qtd']; ?> Produtos</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <?php unset($_SESSION['NUMENOR']); unset($_SESSION['qtd']); } ?>
     <div id="conteudo"  style="height: 100vh;" class="container">
         <form class="form form-group" action="_sqlC/logsAddSaida.php" method="post"> 
             <div class="container-fluid text-center mt-4">
@@ -125,7 +133,7 @@
                     <?php } ?>
                     <div class="col-md-4">
                         <label for="nome"><strong>Nome do Produto</strong></label>
-                        <select class="form-control" name="prodID" id="">
+                        <select style="font-weight: bold" class="form-control" name="prodID" id="">
                             <option value="0" selected disabled>Selecione o Produto</option>
                             <?php 
                                 $sql = mysqli_query($conn,"SELECT * FROM produtos ORDER BY id");

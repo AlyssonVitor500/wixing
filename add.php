@@ -82,7 +82,7 @@
     <?php unset($_SESSION['ADDS']); } ?>
     <?php if (@$_SESSION['ADDD']){ ?>
         <div class="alert alert-danger fixed-top text-center alert-dismissible fade show" role="alert">
-            <strong>Produto não cadastrado!</strong>
+            <strong>Produto não cadastrado! (Evite caracteres como ')</strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -129,7 +129,7 @@
                         <small><strong>Ex.: Biscoito</strong></small>
                     </div>
                     <div class="col-md-4">
-                        <label for="nome"><strong>Fabricante do Produto</strong></label>
+                        <label for="nome"><strong>Fornecedor do Produto</strong></label>
                         <select class="form-control" name="fabricante" id="">
                             <option value="0" selected disabled>Escolha um Fornecedor</option>
                             <?php 

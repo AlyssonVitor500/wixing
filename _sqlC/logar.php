@@ -16,6 +16,7 @@
 
     if(mysqli_affected_rows($conn) > 0) {
         $_SESSION['logado'] = true;
+       
         $setor = null;
         while($dados = $sql->fetch_assoc()){
             $nivel = $dados['nivel'];

@@ -59,7 +59,7 @@
     <div id="conteudo"  style="height: 100vh; padding-bottom: 5vh;" class="container">
         <div class="row">
             <div class="col-md-12 text-center mt-2">
-                <h1><strong><i class="fas fa-box-open"></i> Listagem de Produtos</strong></h1>
+                <h1><strong><i class="fas fa-box-open"></i> Listagem de Produtos</strong> </h1>
             </div>
         </div>
         

@@ -55,8 +55,15 @@
     @font-face {
         font-family: "FontePrincipal";
         src: url("_font/caviar_dreams/CaviarDreams.ttf");
+    } 
+    @font-face {
+        font-family: "FontePrincipalTabela";
+        src: url("_font/GeosansLight.ttf");
     }    
-
+    div.modal {
+        font-family: "FontePrincipal";
+        src: url("_font/caviar_dreams/CaviarDreams.ttf");
+    }
     ::-webkit-scrollbar { width: 1.7px; background-color:white;} 
     ::-webkit-scrollbar-thumb{background-color: #0b2877;}   
 
@@ -126,6 +133,9 @@
 		-moz-animation: fadeIn .9s ease-in-out;
 		-o-animation: fadeIn .9s ease-in-out;
 		animation: fadeIn .9s ease-in-out;
+    }
+    table.table {
+        font-family: 'FontePrincipalTabela';
     }
 </style>
 <body onload="comecarSlider()" >

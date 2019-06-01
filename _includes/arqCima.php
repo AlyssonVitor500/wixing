@@ -54,7 +54,7 @@
 
     @font-face {
         font-family: "FontePrincipal";
-        src: url("_font/GeosansLight.ttf");
+        src: url("_font/caviar_dreams/CaviarDreams.ttf");
     }    
 
     ::-webkit-scrollbar { width: 1.7px; background-color:white;} 

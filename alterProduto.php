@@ -1,5 +1,6 @@
 <?php 
-    include_once '_includes/arqCima.php';
+    include_once '_sqlC/checkNivel.php';
+   @include_once '_includes/arqCima.php';
     include_once '_sqlC/conexao.php';
     $id = $_GET['id'];
     $sql = $conn->query("SELECT * FROM produtos WHERE id = '$id'");
@@ -123,7 +124,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="nome"><strong>Marca do Produto</strong></label>
-                        <select class="form-control mx-auto" style="width:80%" name="fabricante" id="">
+                        <select class="custom-select mx-auto" style="width:80%" name="fabricante" id="">
                             <option value="0" selected disabled>Escolha um Fornecedor</option>
                             <?php 
                                 $sql = mysqli_query($conn,"SELECT * FROM fornecedor ORDER BY nomeForn");
@@ -160,7 +161,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="tipo"><strong>Tipo do Produto</strong></label>
-                        <select style="font-weight: bold" style="width:80%" class="form-control mx-auto" name="tipo" required id="tipo">
+                        <select style="font-weight: bold" style="width:80%" class="custom-select mx-auto" name="tipo" required id="tipo">
                             <option value="0" selected disabled>Escolha o tipo do Produto</option>
                             <option value="1" >Perecível</option>
                             <option value="2">Não Perecível</option>

@@ -1,5 +1,6 @@
-<?php 
-    include_once '_includes/arqCima.php';
+<?php   
+    include_once '_sqlC/checkNivel.php';
+    @include_once '_includes/arqCima.php';
     include_once '_sqlC/conexao.php';
     
     $sql = $conn->query("SELECT * FROM fornecedor");

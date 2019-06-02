@@ -24,7 +24,19 @@
         }
     </style>
     <div id="conteudo"    style="height: 100vh; background-size: cover; background-position: 50% 50%;transition: background-image 1s;" class="container-fluid">
-       
+    
+    
+    <?php if (@$_SESSION['ERRORACESSAR']){ ?>
+        <div class="alert alert-danger fixed-top text-center alert-dismissible fade show" role="alert">
+            <strong>Você não pode acessar essa área!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <?php unset($_SESSION['ERRORACESSAR']); } ?>    
+
+
+
         <div class="container text-center mt-5">
             <img id="logoHome" src="_imgs/logo.png">
         </div>

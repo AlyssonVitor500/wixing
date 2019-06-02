@@ -112,7 +112,7 @@
                     <div class="col-md-12">
                         <form action="" method="get">
                             <label for="fabr">Escolha o Fornecedor</label>
-                            <select class="form-control" name="fabricante" id="fabr">
+                            <select class="custom-select" name="fabricante" id="fabr">
                                 <option value="0" selected disabled>Escolher</option>
                                 <?php 
                                     $sql = mysqli_query($conn,"SELECT * FROM fornecedor ORDER BY nomeForn");

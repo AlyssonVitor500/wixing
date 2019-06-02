@@ -17,15 +17,18 @@
         <div class="card mx-auto" style="width: 60vw;">
             <div class="card-header text-center" style="background-color: white" ><h2>Sobre nós</h2></div>
                 <div class="card-body" style="height: 60vh; overflow: scroll; overflow-x: hidden; text-align: justify; font-size: 1em">
-                    <p>
-                        Somos a equipe de desenvolvimento para web da escola Luiza de Teodoro Veira e fizemos essa API para podermos fazer um controle de estoque voltado para o campo 
-                        de emprego Logística.
-                    </p>
-                    <p>
-                        Fizemos esse projeto com o intuito de conseguir desenvolver uma aplicação WEB para logística com foco na área de controle de estoque para a escola <strong>E.E.E.P. Professora Luiza de Teodoro Vieira</strong>.
+                        
 
-                    </p>
+                        <p>
+                            Criada com o objetivo de facilitar os sistemas de estoque das empresas, a Wixing é um site moderno e de fácil entendimento. Nossa missão é estar presenta no dia a dia das empresas e ser sempre funcional, buscando sempre melhorar. Com sua interface limpa e compreensiva, a Wixing chega ao ramo da Logística para ajudar e surpreender. Conheça hoje mesmo nossas funcionalidades.
+                        </p>
+                        <hr>
+                        <div class="container text-center"><h3>História da Empresa</h3> </div>
+                        <p>
+                            A Wixing foi criada como projeto final do curso técnico em Informática da escola profissional Professora Luiza de Teodoro Vieira. Com os conhecimentos das cadeiras de desenvolvimento web, a Wixing foi desenvolvida com excelência para melhor atender. É o sistema de estoque que você precisa.
+                        </p>
                     <p>
+
                         Atenciosamente, Equipe Wixing.
                     </p>
 

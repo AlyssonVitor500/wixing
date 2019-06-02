@@ -40,7 +40,7 @@
     <div id="conteudo"  style="height: 100vh; padding-bottom: 5vh;" class="container">
         <div class="row">
             <div class="col-md-12 text-center mt-2">
-                <h1><strong><i class="fas fa-table"></i> Frequências</strong><button data-toggle="modal" data-target="#FreqSearchAll" data- class="btn ml-5" style="background-color: #480720; color: white"><strong>Pesquisa Inteligente</strong></button><button data-toggle="modal" data-target="#FreqTipo" data- class="btn ml-1" style="background-color: #3a073a; color: white"><strong>Pesquisar por Tipo</strong></button></h1>
+                <h1><strong><i class="fas fa-table"></i> Frequências</strong><button data-toggle="modal" data-target="#FreqSearchAll" data- class="btn ml-5" style="background-color: #480720; color: white"><strong>Pesquisa Inteligente</strong></button><button data-toggle="modal" data-target="#FreqTipo" data- class="btn ml-1" style="background-color: #3a073a; color: white"><strong>Pesquisar por Tipo</strong></button><a href="freq.php" style="background-color:#041042; color: white" class="btn ml-1"><strong>Todos os Registros</strong></a></h1>
             </div>
         </div>
         
@@ -60,7 +60,7 @@
                     </thead>
                     <tbody style="font-weight: bold" class="text-center">
                         <?php
-                            include_once '_sqlC/listFreq.php';
+                            include_once '_sqlC/freqTipo.php';
                         ?>
                     </tbody>
                 </table>
@@ -96,7 +96,7 @@
                         <div class="row">
                             <div class="col-md-12 text-center mx-auto">
                                 <label for="">Pesquisar Por:</label>
-                                <select class="form-control" required name="selectSmart" id="">
+                                <select class="custom-select" required name="selectSmart" id="">
                                     <option value="1" selected>Ambos (Chegada e Saida)</option>
                                     <option value="2">Só Saida</option>
                                     <option value="3" >Só Chegada</option>
@@ -110,9 +110,15 @@
                         <button type="submit" class="btn " id="pesquisar">Pesquisar <i class="fas fa-paper-plane"></i></button>
                     </div>
                     </div>
+          
                 </div>
-             </div>   
+               </div> 
+               
     </form>
+
+
+
+
 
     <!-- Pesquisar po Tipo -->
     <form class="form-group" action="frenTipo.php" method="post">

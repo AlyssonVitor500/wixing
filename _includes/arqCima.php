@@ -49,7 +49,7 @@
         font-family: "FontePrincipal";
         src: url("_font/caviar_dreams/CaviarDreams.ttf");
     }
-    ::-webkit-scrollbar { width: 1.7px; background-color:white;} 
+    ::-webkit-scrollbar { width: 3px; background-color:white; height: 3px;} 
     ::-webkit-scrollbar-thumb{background-color: #0b2877;}   
 
     @-webkit-keyframes fadeIn {
@@ -159,7 +159,9 @@
                 
             }
 </style>
-                                    
+
+  <body onload="comecarSlider()" >    
+                            
     <div id="tag"  class="nav-Side">
             
 
@@ -183,7 +185,7 @@
                                         <td> <a href="menuVer.php"><i title="Ver Produtos e Fornecedores" class="fas fa-th fa-2x"></i></a> </td>
                                     </tr>
                                     <tr>
-                                        <td><a href="saida.php"><i title="Registrar Saida"  class="fas fa-money-bill-alt fa-2x"></i></a> </td>
+                                        <td><a href="saida.php"><i class="fas fa-external-link-square-alt fa-2x" title="Registra Saida"></i></a> </td>
                                     </tr>
                                     <tr>
                                         <td> <a href="chegada.php"><i title="Registrar Chegada" class="fas fa-angle-double-up fa-2x"></i></a> </td>
@@ -191,10 +193,14 @@
                                     <tr>
                                         <td> <a href="freq.php"><i title="Frequência" class="fas fa-wave-square fa-2x"></i></a> </td>
                                     </tr>
+                                    
                                     <tr>
-                                        <td> <a href="info.php"><i title="Informação" class="fas fa-info-circle fa-2x"></i></a> </td>
+                                        <td> <a href="info.php"><i title="Informação"  class="fas fa-info-circle fa-2x"></i></a> </td>
                                     </tr>
-<body onload="comecarSlider()" >
+                                    <tr>
+                                        <td> <a href="config.php"><i id="engine" title="Configurações" onmousemove="gira()" onmouseout="paraGiro()" class="fas fa-cog  fa-2x"></i></a> </td>
+                                    </tr>
+
 
                                 </table>
                             

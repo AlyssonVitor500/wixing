@@ -1,10 +1,14 @@
 <?php 
     include_once '_sqlC/checkNivel.php';
+    $get = $_GET['id'];
+    if (!isset($_GET['id']) || $get == 1) {
+        header("Location: listUsers.php");
+    }
+    
+    
     @include_once '_includes/arqCima.php';
     $_SESSION['IDAPAGAR'] = $_GET['id'];
-
-    
-    
+   
 ?>
 
     <style>
@@ -42,10 +46,10 @@
             </div>
             <div class="row text-center mt-5">
                 <div class="col-md-6">
-                    <a href="listForn.php" style="font-weight: bold" id="n" class="btn btn-lg"><i class="fas fa-undo"></i> Não, desejo retornar!</a>
+                    <a href="listUsers.php" style="font-weight: bold" id="n" class="btn btn-lg"><i class="fas fa-undo"></i> Não, desejo retornar!</a>
                 </div>
                 <div class="col-md-6">
-                    <a href="_sqlC/deleteF.php"  style="font-weight: bold" id="s" class="btn btn-lg">Sim! Estou ciente e quero continuar <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="_sqlC/deleteUserList.php"  style="font-weight: bold" id="s" class="btn btn-lg">Sim! Estou ciente e quero continuar <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <div class="row text-center mt-1">

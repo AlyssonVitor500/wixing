@@ -99,16 +99,19 @@
                                     <td> <div class="container" style=""><a href="menuVer.php"><i title="Ver Produtos e Fornecedores" class="fas fa-th fa-2x"></i></a></div> </td>
                                 </tr>
                                 <tr>
-                                    <td> <div class="container" style=""><a href="vender.php"><i title="Registrar Saida"  class="fas fa-money-bill-alt fa-2x"></i></a></div> </td>
+                                    <td> <div class="container" style=""><a href="saida.php"><i class="fas fa-external-link-square-alt fa-2x" title="Registra Saida"></i></a></div> </td>
                                 </tr>
                                 <tr>
                                     <td> <div class="container" style=""><a href="chegada.php"><i title="Registrar Chegada" class="fas fa-angle-double-up fa-2x"></i></a></div> </td>
                                 </tr>
                                 <tr>
-                                    <td> <div class="container" style=""><a href="freq.php"><i title="Frequência" class="fas fa-wave-square fa-2x"></i></a></div> </td>
+                                    <td> <div class="container" style=""><a href="freq.php"><i title="Frequência"  class="fas fa-wave-square fa-2x"></i></a></div> </td>
                                 </tr>
                                 <tr>
                                     <td> <div class="container" style=""><a href="info.php"><i title="Informação" class="fas fa-info-circle fa-2x"></i></a></div> </td>
+                                </tr>
+                                <tr>
+                                        <td> <div class="container" style=""><a href="config.php"><i id="engine" title="Configurações" class="fas fa-cog  fa-2x"></i></a></div> </td>
                                 </tr>
                                 
 

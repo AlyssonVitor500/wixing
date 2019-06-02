@@ -169,7 +169,7 @@
                         <div class="col-md-6 text-center">
                                 
                                <label><strong> Registrar pelo dia e hora atual ou escolher? </strong></label>
-                               <select class="form-control mx-auto" name="selectDia"  style="width: 90%;" id="">
+                               <select class="custom-select mx-auto" name="selectDia"  style="width: 90%;" id="">
                                     <option value="1" id="diaA" selected>Dia e hora atual</option>
                                     <option value="2" id="diaE" >Escolher dia e hora</option>
                                 </select>    

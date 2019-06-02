@@ -1,5 +1,6 @@
 <?php 
-        include_once '_includes/arqCima.php';
+        include_once '_sqlC/checkNivel.php';
+        @include_once '_includes/arqCima.php';
      ?>
 
     <?php

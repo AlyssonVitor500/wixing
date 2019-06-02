@@ -21,7 +21,11 @@
         while($dados = $sql->fetch_assoc()){
             $nivel = $dados['nivel'];
             $user = $dados['user'];
+            $userID = $dados['id'];
+            $userImg = $dados['perfilFoto'];
          }
+         $_SESSION['userImg'] = $userImg;
+         $_SESSION['idUser'] = $userID;
          $_SESSION['user'] = $user;
          $_SESSION['nivel'] = $nivel;
         header("Location: ../home.php");

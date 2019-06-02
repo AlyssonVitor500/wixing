@@ -31,6 +31,22 @@
             background-color: #427fbc;
             color: white;
         }
+        tr#eu {
+            background-color: rgba(6, 46, 94,1);
+            transition: .2s;
+            color: white;
+            font-weight: bold;
+            
+        }
+      
+       
+        
+        tr#eu:hover {
+            background-color: rgba(6, 46, 94,.8);
+            
+           
+        }
+       
     </style>
     <!-- ALERTs -->
     <?php if (@$_SESSION['certoDELL']){ ?>

@@ -154,9 +154,9 @@
             <hr>
             <div class="row mt-3 text-center">
                     <div class="col-md-4">
-                        <label for="ident"><strong>Peso do Produto (em Quilogramas)</strong></label>
+                        <label for="ident"><strong>Peso do Produto (em Quilogramas/Litro)</strong></label>
                         <input type="text" class="form-control" value="<?php echo $pesoP; ?>" name="peso" required  id="ident">
-                        <small><strong>Ex.: 1kg (Utilize ponto como vírgula)</strong></small>
+                        <small><strong>Ex.: 1kg ou 1.5L (Utilize ponto como vírgula)</strong></small>
                         
                     </div>
                     <div class="col-md-4">

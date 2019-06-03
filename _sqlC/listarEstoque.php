@@ -32,7 +32,7 @@
                     <td> $idP </td>
                     <td> $nomeP </td>
                     <td> $nomeForn </td>
-                    <td> $pesoP Kg</td>
+                    <td> $pesoP Kg/L</td>
                     <td> $tipo_p </td>
                     <td>R$ $valor_p </td>
                     <td> $descricaoP </td>

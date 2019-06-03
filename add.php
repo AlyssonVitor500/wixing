@@ -141,7 +141,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="nome"><strong>Fornecedor do Produto</strong></label>
-                        <select class=" mx-auto custom-select" name="fabricante" style="width:80%;" id="">
+                        <select class=" mx-auto custom-select" name="fabricante" style="width:100%;" id="">
                             <option value="0" selected disabled>Escolha um Fornecedor</option>
                             <?php 
                                 $sql = mysqli_query($conn,"SELECT * FROM fornecedor ORDER BY nomeForn");
@@ -164,7 +164,7 @@
                                 
                             ?>
                         </select>
-                        <small><strong>Ex.: Fábrica Fortaleza</strong></small>
+                        
                     </div>
                     
                 </div>
@@ -172,9 +172,9 @@
             <hr>
             <div class="row mt-3 text-center">
                     <div class="col-md-4">
-                        <label for="ident"><strong>Peso do Produto (em Quilogramas)</strong></label>
+                        <label for="ident"><strong>Peso do Produto (em Quilogramas/Litros)</strong></label>
                         <input type="text" class="form-control" name="peso" required id="ident">
-                        <small><strong>Ex.: 1kg (Utilize ponto como vírgula)</strong></small>
+                        <small><strong>Ex.: 1kg ou 1.5L (Utilize ponto como vírgula)</strong></small>
                         
                     </div>
                     <div class="col-md-4">

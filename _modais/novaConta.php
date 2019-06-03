@@ -20,7 +20,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="addConta"><i class="fas fa-users fa-2x"></i> Adicionar nova Conta</h5>
+        <h5 class="modal-title" id="addConta"><i class="fas fa-users fa-2x"></i><strong> Adicionar nova Conta</strong></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -29,19 +29,19 @@
             <form action="_sqlC/addUser.php" method="post">
                 <div class="row mt-2">
                     <div class="col-md-12 text-center">
-                        <label for="">Nickname do Usuário</label>
+                        <label for=""><strong>Nickname do Usuário</strong></label>
                         <input type="text" name="nomeUser" class="form-control" id="">
                     </div>
                 </div>
                 <div class="row mt-2">
                     <div class="col-md-12 text-center">
-                        <label for="">Senha do Usuário</label>
+                        <label for=""><strong>Senha do Usuário</strong></label>
                         <input type="password" name="senhaUser" class="form-control" id="">
                     </div>
                 </div>
                 <div class="row mt-2">
                     <div class="col-md-12 text-center">
-                        <label for="">Tipo de Usuário</label>
+                        <label for=""><strong>Tipo de Usuário</strong></label>
                         <select name="tipoUser" style="color: black" class="custom-select" id="">
                             <option value="2" >Usuário Padrão</option>
                             <option value="1" >Usuário Root</option>

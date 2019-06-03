@@ -20,7 +20,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="AlterPerfil"><i class="fas fa-user-edit fa-2x"></i> Alterar Perfil</h5>
+        <h5 class="modal-title" id="AlterPerfil"><i class="fas fa-user-edit fa-2x"></i> <strong>Alterar Perfil</strong></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <label>
-                            O que você deseja Alterar? 
+                        <strong>O que você deseja Alterar?</strong> 
                         </label>
                         <select class="form-control" name="select" id="selectAlter">
                             <option id="senha&User" value="0" selected>Senha e Nome de Usuário</option>
@@ -42,7 +42,7 @@
                 <div class="row">
                     <div class="col-md-6 text-center">
                         <label>
-                            Nome
+                        <strong>Nome</strong>
                         </label>
                         <input type="text" id="nomeU" class="form-control" name="nome">
                         
@@ -50,7 +50,7 @@
 
                     <div class="col-md-6 text-center">
                         <label>
-                            Senha
+                        <strong>Senha</strong>
                         </label>
                         <input type="password"  class="form-control" name="senha" id="senha">
                         
@@ -60,7 +60,7 @@
       </div>
       <div class="modal-footer">
             <button type="button" class="btn" id="fechar" data-dismiss="modal">Fechar <i class="far fa-times-circle"></i></button>
-            <button type="submit" class="btn " id="pesquisar">Pesquisar <i class="fas fa-paper-plane"></i></button>
+            <button type="submit" class="btn " id="pesquisar">Alterar <i class="fas fa-paper-plane"></i></button>
       </div>
     </div>
   </div>
@@ -76,13 +76,19 @@
             if(opc.selected == true) {
                 document.getElementById("nomeU").disabled=false;
                 document.getElementById("senha").disabled=false;
+                document.getElementById("nomeU").required=true;
+                document.getElementById("senha").required=true;
             } else if(opc1.selected == true) {
                 document.getElementById("nomeU").disabled=false;
                 document.getElementById("senha").disabled=true;
+                document.getElementById("nomeU").required=true;
+                document.getElementById("senha").required=false;
             }else if(opc2.selected == true) {
             
                 document.getElementById("nomeU").disabled=true;
                 document.getElementById("senha").disabled=false;
+                document.getElementById("nomeU").required=false;
+                document.getElementById("senha").required=true;
             
             }
         } 

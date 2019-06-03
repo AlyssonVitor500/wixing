@@ -13,9 +13,9 @@
             $_SESSION['successAlterar'] = true;
             header("Location: ../config.php");
         }else {
-           # $_SESSION['errorAlterar'] = true;
-           # header("Location: ../config.php");
-           echo $conn->error;
+           $_SESSION['errorAlterar'] = true;
+           header("Location: ../config.php");
+           
         }
     }else {
         $_SESSION['errorAlterar'] = true;

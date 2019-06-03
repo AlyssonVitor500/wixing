@@ -108,7 +108,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="Search"><strong><i class="fas fa-search"></i> Pesquisar por Tipo de Usuário</strong></h5>
+                <h5 class="modal-title" id="Search"><i class="fas fa-search"></i> <strong>Pesquisar por Tipo de Usuário</strong></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -117,7 +117,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         
-                            <label for="fabr">Escolha o tipo de Usuário</label>
+                            <label for="fabr"><strong>Escolha o tipo de Usuário</strong></label>
                             <select style="font-weight: bold;"  name="tipo" class="custom-select"> 
                                 <option value="1" selected> Usuário Administrador</option>
                                 <option value="2"> Usuário Padrão </option>

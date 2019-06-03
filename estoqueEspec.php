@@ -83,7 +83,7 @@
                         <th>Valor do Produto</th>
                         <th>Descrição</th>
                         <th>Quantidade no estoque</th>
-                        
+                        <th>
                     </thead>
                     <tbody style="font-weight: bold" class="text-center">
                         <?php

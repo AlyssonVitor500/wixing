@@ -128,20 +128,34 @@
                             <option value="0" selected disabled>Escolha um Fornecedor</option>
                             <?php 
                                 $sql = mysqli_query($conn,"SELECT * FROM fornecedor ORDER BY nomeForn");
+                                $idUser = $_GET['id']; 
+                                $sql1 = mysqli_query($conn,"SELECT * FROM produtos WHERE id = '$idUser'");
+                                while ($dados = $sql1->fetch_assoc()){
+                                    $idFornFK = $dados['idFornFK'];
 
+                                }
                                 $value = 0;
 
                                 while ($dados = $sql->fetch_assoc()){
                                     $id = $dados['idForn'];
                                     $nome = $dados['nomeForn'];
-
+                                    
                                     $nome = mb_convert_case($nome, MB_CASE_TITLE, 'UTF-8');
-
-                                    echo "
-                                        <option value='$id'> 
-                                            $nome
-                                        </option>
-                                    ";
+                                    
+                                    if ($id == $idFornFK){
+                                        echo "
+                                            <option selected value='$id'> 
+                                                $nome
+                                            </option>
+                                        ";
+                                    }else {
+                                        echo "
+                                            <option value='$id'> 
+                                                $nome
+                                            </option>
+                                         ";
+                                    }
+                                    
 
                                 }
                                 
@@ -162,9 +176,14 @@
                     <div class="col-md-4">
                         <label for="tipo"><strong>Tipo do Produto</strong></label>
                         <select style="font-weight: bold" style="width:80%" class="custom-select mx-auto" name="tipo" required id="tipo">
-                            <option value="0" selected disabled>Escolha o tipo do Produto</option>
-                            <option value="1" >Perecível</option>
-                            <option value="2">Não Perecível</option>
+                            <option value="0" disabled>Escolha o tipo do Produto</option>
+                            <?php if($tipo_p == 1){ ?>
+                                <option value="1" selected >Perecível</option>
+                                <option value="2">Não Perecível</option>
+                            <?php }else { ?>
+                                <option value="1" >Perecível</option>
+                                <option value="2" selected>Não Perecível</option>
+                            <?php } ?>      
                         </select>
                       
                     </div>

@@ -210,18 +210,18 @@
                     <div class="row mt-3">
 
                         <div class="col-md-2 text-center">
-                            <a href="menuAdd.php" class="btn btn-lg mx-auto" id="voltar"><i class="far fa-hand-point-left"></i> Voltar  </a>
+                            <a href="menuAdd.php" class="btn btn-lg mx-auto" id="voltar" style="width: 100%;" ><i class="far fa-hand-point-left"></i> Voltar  </a>
                         </div>
                         <div class="col-md-4 text-center">
-                            <a href="listProd.php" class="btn btn-lg mx-auto" id="mandar"> Listar Produtos Cadastrados <i class="fas fa-list"></i> </a>
+                            <a href="listProd.php" class="btn btn-lg mx-auto" id="mandar" style="width: 100%;" > Listar Produtos <i class="fas fa-list"></i> </a>
                         </div>
                         
 
                         <div class="col-md-4 text-center">
-                            <button type="reset" class="btn btn-lg mx-auto" id="apagar">Apagar Valores <i class="fas fa-backspace"></i> </button>
+                            <button type="reset" class="btn btn-lg mx-auto" id="apagar" style="width: 100%;" >Apagar Valores <i class="fas fa-backspace"></i> </button>
                         </div>
                         <div class="col-md-2 text-center">
-                        <button type="submit" id="enviar" class="btn mx-auto btn-lg" >Enviar <i class="far fa-paper-plane"></i> </button>
+                        <button type="submit" id="enviar" class="btn mx-auto btn-lg" style="width: 100%;" >Enviar <i class="far fa-paper-plane"></i> </button>
 
                         </div>
                         

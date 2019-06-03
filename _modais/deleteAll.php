@@ -1,6 +1,6 @@
 <?php if (@$_SESSION['successAlterar']){ ?>
         <div class="alert alert-success fixed-top text-center alert-dismissible fade show" role="alert">
-            <strong>Dados alterados com Sucesso!</strong>
+            <strong>Dados apagados com Sucesso!</strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -9,7 +9,7 @@
 
 <?php if (@$_SESSION['errorAlterar']){ ?>
         <div class="alert alert-danger fixed-top text-center alert-dismissible fade show" role="alert">
-            <strong>Dados não alterados!</strong>
+            <strong>Dados não apagados!</strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -20,13 +20,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="deleteAll"><i style="color: orange;" class="fas fa-exclamation-triangle fa-2x"></i> Deletar TUDO</h5>
+        <h5 class="modal-title" id="deleteAll"><i style="color: orange;" class="fas fa-exclamation-triangle fa-2x"></i><strong> Deletar TUDO</strong></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-            <form action="_sqlC/deleteAll.php" method="post">
+            
                 <div class="row">
                     <p style="text-indent: 5%; text-align: justify">
                         Se você fizer essa operação, <strong>TODOS</strong> os arquivos serão&nbsp;  <strong>APAGADOS</strong>.
@@ -39,9 +39,9 @@
       </div>
       <div class="modal-footer">
             <button type="button" class="btn" id="fechar" data-dismiss="modal">Não, quero voltar! <i class="fas fa-undo"></i></button>
-            <button type="submit" class="btn " id="pesquisar">Sim, quero continuar! <i class="far fa-trash-alt"></i></button>
+            <button type="button" class="btn" data-target="#EscolhaDeDelete" data-toggle="modal" id="pesquisar">Sim, quero continuar! <i class="far fa-trash-alt"></i></button>
       </div>
     </div>
   </div>
 </div>
-</form>  
+ 

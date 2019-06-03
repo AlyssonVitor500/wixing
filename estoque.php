@@ -83,7 +83,7 @@
                         <th>Valor do Produto</th>
                         <th>Descrição</th>
                         <th>Quantidade no estoque</th>
-                        
+                        <th></th>
                     </thead>
                     <tbody style="font-weight: bold" class="text-center">
                         <?php
@@ -111,7 +111,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <form action="estoqueEspec.php" method="get">
-                            <label for="fabr">Escolha o Fornecedor</label>
+                            <label for="fabr"><strong>Escolha o Fornecedor</strong></label>
                             <select style="font-weight: bold;" class="custom-select" name="fabricante" id="fabr">
                                 <option value="0" selected disabled>Escolher</option>
                                 <?php 

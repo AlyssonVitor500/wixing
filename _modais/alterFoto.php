@@ -20,7 +20,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="AlterPerfilFoto"><i class="fas fa-portrait fa-2x"></i> Alterar Foto de Perfil</h5>
+        <h5 class="modal-title" id="AlterPerfilFoto"><i class="fas fa-portrait fa-2x"></i><strong> Alterar Foto de Perfil</strong></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -28,7 +28,7 @@
       <div class="modal-body">
             <form action="_sqlC/uploadFile.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-12 text-center">
-                    Escolha o diretório da imagem
+                <strong>Escolha o diretório da imagem</strong>
                     <div class="custom-file text-center">
                         
                         <input type="file" required class="custom-file-input" name="arqv">

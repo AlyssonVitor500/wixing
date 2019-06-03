@@ -110,10 +110,15 @@
             <div class="col-md-4">
                     <button class="btn btn-lg" data-toggle="modal" data-target="#AlterPerfil" style="background-color:#041042; color: white; width: 100%;">Alterar dados do Perfil <i class="fas fa-user-edit"></i></button>
             </div>
-            
-            <div class="col-md-4">
-                    <button class="btn btn-lg" data-toggle="modal" data-target="#AlterPerfilFoto" style="background-color:#041042; color: white; width: 100%;">Alterar foto de Perfil <i class="fas fa-images"></i></button>
-            </div>
+            <?php if ($id == 1) { ?>
+                <div class="col-md-4">
+                        <button class="btn btn-lg" disabled data-toggle="modal" data-target="#AlterPerfilFoto" style="background-color:#041042; color: white; width: 100%;">Alterar foto de Perfil <i class="fas fa-images"></i></button>
+                </div>
+            <?php } else { ?>    
+                <div class="col-md-4">
+                        <button class="btn btn-lg" data-toggle="modal" data-target="#AlterPerfilFoto" style="background-color:#041042; color: white; width: 100%;">Alterar foto de Perfil <i class="fas fa-images"></i></button>
+                </div>
+            <?php } ?>    
             <div class="col-md-4">
                     <?php if($id == 1){ ?>
                         <button disabled class="btn btn-lg" style="background-color:#041042; color: white; width: 100%;">Deletar Conta <i class="fas fa-user-minus"></i></button>
@@ -159,4 +164,5 @@
     include_once '_modais/alterFoto.php';
     include_once '_modais/novaConta.php';
     include_once '_modais/deleteAll.php';
+    include_once '_modais/deletarEscolha.php';
 ?>

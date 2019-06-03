@@ -3,7 +3,7 @@
     include_once 'conexao.php';
 
     
-    $sql = mysqli_query($conn, "SELECT * FROM logs as l,  produtos as p, fornecedor as f WHERE l.prodIdFK = p.id and p.idFornFK = f.idForn ORDER BY l.dia DESC");
+    $sql = mysqli_query($conn, "SELECT * FROM logs as l,  produtos as p, fornecedor as f WHERE l.prodIdFK = p.id and p.idFornFK = f.idForn ORDER BY l.dia, l.hora DESC");
     if(mysqli_num_rows($sql)>0){
         while ($dados = $sql->fetch_assoc()) {
             $idLog = $dados['idLog'];

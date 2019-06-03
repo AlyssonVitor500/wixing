@@ -124,7 +124,7 @@
                         </div>
 
                     <?php } ?>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <label for="nome"><strong>Nome do Produto</strong></label>
                         <select class="form-control" name="prodID" id="">
                             <option value="0" selected disabled>Selecione o Produto</option>
@@ -151,7 +151,7 @@
                         </select>
                         
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <label for="nome"><strong>Quantidade de Produtos Entregues</strong></label>
                         <input type="text" class="form-control" name="qnt" required id="cnpj">
                         
@@ -159,10 +159,12 @@
                     
                   
                 </div>
-                    <div class="row mt-4">
+                    
+                    <div class="row mt-2">
+                        
                         <div class="col-md-6 text-center">
                                 
-                               <label><strong> Registrar pelo dia e hora atual ou escolher? </strong></label>
+                               <label><strong> Como deseja registrar? </strong></label>
                                <select class="custom-select mx-auto" name="selectDia"  style="width: 90%;" id="">
                                     <option value="1" id="diaA" selected>Dia e hora atual</option>
                                     <option value="2" id="diaE" >Escolher dia e hora</option>

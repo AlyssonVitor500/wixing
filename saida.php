@@ -72,6 +72,7 @@
 
         }
     </style>
+       
     <?php if (@$_SESSION['CERTO']){ ?>
         <div class="alert alert-success fixed-top text-center alert-dismissible fade show" role="alert">
             <strong>Saida registrada com Sucesso!</strong>
@@ -133,7 +134,7 @@
                     <?php } ?>
                     <div class="col-md-3">
                         <label for="nome"><strong>Nome do Produto</strong></label>
-                        <select style="font-weight: bold" style="width: 90%;" class="form-control mx-auto" name="prodID" id="">
+                        <select style="font-weight: bold" style="width: 90%;" class="form-control mx-auto" name="prodID" id="idDoProduto">
                             <option value="0" selected disabled>Selecione o Produto</option>
                             <?php 
                                 $sql = mysqli_query($conn,"SELECT * FROM produtos ORDER BY id");
@@ -156,6 +157,8 @@
                                 
                             ?>
                         </select>
+                       
+
                         
                     </div>
                     <div class="col-md-5">
@@ -166,9 +169,10 @@
                     
                 </div>
                 <div class="row mt-4">
+                      
                         <div class="col-md-6 text-center">
                                 
-                               <label><strong> Registrar pelo dia e hora atual ou escolher? </strong></label>
+                               <label><strong> Como deseja registrar? </strong></label>
                                <select class="custom-select mx-auto" name="selectDia"  style="width: 90%;" id="">
                                     <option value="1" id="diaA" selected>Dia e hora atual</option>
                                     <option value="2" id="diaE" >Escolher dia e hora</option>
@@ -186,7 +190,11 @@
                         </div>
                     </div>
                           
-            
+                        
+                                   
+                          
+                        
+
                     <div class="row mt-5">
                         
                         <div class="col-md-6 text-center">
@@ -225,4 +233,17 @@
             document.getElementById("dia").disabled = false;
        }
    }
+
+   
+   
+   
+   
+  
 </script>
+
+
+
+
+
+
+

@@ -26,6 +26,7 @@
                         <td> Usuário Administrador Master</td>
                         <td colspan=''><div id='fotoUser' class='container' style='background-image: url($foto)'> </div> </td>
                         <td> Não é Possível Apagar
+                        <td> Não é Possível Alterar
                         
                         
                     </tr>";
@@ -37,7 +38,7 @@
                         <td> Usuário Administrador Master</td>
                         <td colspan=''><div id='fotoUser' class='container' style='background-image: url($foto)'> </div> </td>
                         <td> Não é Possível Apagar
-                        
+                        <td> Não é Possível Alterar
                         
                     </tr>";
                }
@@ -51,7 +52,7 @@
                 <td> Usuário Administrador </td>
                 <td><div id='fotoUser' class='container' style='background-image: url($foto)'> </div> </td>
                 <td> Não é Possível Apagar
-                
+                <td> Não é Possível Alterar
                 
             </tr>";
 
@@ -68,6 +69,7 @@
                                 
                                 
                                 <td><a href='confirmDellUserList.php?id=$id' class='btn'><i id='del' style='cursor: pointer' title='Apagar' class='far fa-times-circle fa-1x'></i> </a></td>
+                                <td><a href='_sqlC/alterNivel.php?id=$id&nivelP=$nivel' title='Descer o nível' class='btn btn-danger'><i class='fas fa-caret-down'></i></a>
                             </tr>
                         "; 
                  }else {
@@ -81,7 +83,7 @@
                                 
                                 
                                 <td><a href='confirmDellUserList.php?id=$id' class='btn'><i id='del' style='cursor: pointer' title='Apagar' class='far fa-times-circle fa-1x'></i> </a></td>
-                                
+                                <td><a href='_sqlC/alterNivel.php?id=$id&nivelP=$nivel' title='Subir o nível' class='btn btn-success'><i class='fas fa-caret-up'></i></a>
                             </tr>
                         "; 
                 }

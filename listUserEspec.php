@@ -87,7 +87,7 @@
                         <th>Nome do Usuário</th>
                         <th>Tipo do Usuário</th>
                         <th>Foto do Usuário</th>
-                        <th></th>
+                        <th></th><th></th>
                        
                     </thead>
                     <tbody style="font-weight: bold" class="text-center">

@@ -66,6 +66,24 @@
             </button>
         </div>
     <?php unset($_SESSION['erroDELL']); } ?>
+
+    <?php if (@$_SESSION['trocaNivelS']){ ?>
+        <div class="alert alert-success fixed-top text-center alert-dismissible fade show" role="alert">
+            <strong>Nível alterado com Sucesso!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <?php unset($_SESSION['trocaNivelS']); } ?>
+
+    <?php if (@$_SESSION['trocaNivelD']){ ?>
+        <div class="alert alert-danger fixed-top text-center alert-dismissible fade show" role="alert">
+            <strong>Não foi possível trocar o nível!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <?php unset($_SESSION['trocaNivelD']); } ?>
    
 
      <!-- Fim - ALERTs -->
@@ -87,7 +105,7 @@
                         <th>Nome do Usuário</th>
                         <th>Tipo do Usuário</th>
                         <th>Foto do Usuário</th>
-                        <th></th>
+                        <th></th><th></th>
                        
                     </thead>
                     <tbody style="font-weight: bold" class="text-center">

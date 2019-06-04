@@ -28,6 +28,8 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
 
+        border-radius: 2%;
+
     }
     input#nome {
         width: 80%;
